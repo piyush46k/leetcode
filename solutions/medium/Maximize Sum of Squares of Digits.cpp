@@ -3,22 +3,23 @@
             // Language: C++
             // Link: https://leetcode.com/problems/maximize-sum-of-squares-of-digits/
 
-        }
-        if (output.length()<num){
-            for(int i=0;i<loop;i++){
-                output+='0';
-            }
-            return output;
-        }
-        else{
-            return output;
+        string output(nines,'9');
+        
+        if(rem > 0){
+            output.push_back(rem + '0');
         }
 
-            int loop = num -output.length();
+        output.append(num-output.length() , '0');
+        return output;
+        
+public:
+    string maxSumOfSquares(int num, int sum) {
+        int nines = sum/9;
+        int rem = sum % 9;
+        if(sum>num*9){
             return "";
-        if(sum > 0){
-        num = store;
         }
-            result=0;
-            num--;
     }
+class Solution {
+        
+};
